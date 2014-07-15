@@ -1,22 +1,39 @@
 Google Analytics
 =============
 
-Google Analytics as per the Collection Protocol. Specifically useful for MXit.
+Google Analytics as per the [Collection Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/reference).
 
-- cURL-less
+Specifically useful for MXit & mobile sites.
+
+----
+
+There are 2 different ways you can use this library.
+
+- Non-blocking using `exec` & `cURL`. ([src](https://segment.io/blog/how-to-make-async-requests-in-php/))
+- Blocking using `file_get_contents`, but `cURL`-less.
+
+----
+
+**Features**
+
+- Easy config
 - Autohit
 - Include and forget
 
-This is v0.1, and it's super basic.. I plan to have a look at this and improve it later on.
+### Notes
 
-_Note_
+_Non-blocking_
 
-We're not using cURL here, and instead opening a remote file.. So, make sure your server has the `allow_url_fopen` flag set to `true`.
+Make sure your server has `php_curl` installed.
+
+_Blocking_
+
+Make sure your server has the `allow_url_fopen` flag set to `On`.
 
 
 ## Usage
 
-Open `googleanalytics.php` and edit your UA code, then..
+Open and edit `googleanalytics.php`.
 
 ```php
 require_once("googleanalytics.php");
