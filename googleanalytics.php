@@ -13,9 +13,6 @@
 // Your UA code
 $GA_ACCOUNT = "UA-XX-X";
 
-// Using this in a MXit app?
-$MXIT = true;
-
 /**
  *  A unique identifier for the current user
  *  http://goo.gl/EeHnoo
