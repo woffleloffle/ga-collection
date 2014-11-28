@@ -41,7 +41,7 @@ Open and edit `googleanalytics.php`.
 require_once("googleanalytics.php");
 ```
 
-**Csharp**
+**C#**
 
 **Events**
 ```cs
